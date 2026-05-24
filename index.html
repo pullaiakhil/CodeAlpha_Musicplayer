@@ -1,621 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0">
-
-  <title>
-    PULLAI AKHIL | Portfolio
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARIA — Music Player
+    
   </title>
-
-  <!-- CSS -->
-
-  <link rel="stylesheet"
-    href="stylesheet.css">
-
-  <!-- GOOGLE FONT -->
-
-  <link rel="preconnect"
-    href="https://fonts.googleapis.com">
-
-  <link rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
-
-  <!-- FONT AWESOME -->
-
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Favicon SVG inline -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23111' stroke='%23c9a84c' stroke-width='2'/><polygon points='26,20 26,44 46,32' fill='%23c9a84c'/></svg>" />
 </head>
-
 <body>
-
-  <!-- BACKGROUND -->
-
-  <div class="bg1"></div>
-  <div class="bg2"></div>
-  <div class="bg3"></div>
-
-  <!-- NAVBAR -->
-
-  <header>
-
-    <nav class="navbar">
-
-      <h1 class="logo">
-        PULLAI AKHIL
-      </h1>
-
-      <ul class="nav-links">
-
-        <li><a href="#home">Home</a></li>
-
-        <li><a href="#about">About</a></li>
-
-        <li><a href="#skills">Skills</a></li>
-
-        <li><a href="#projects">Projects</a></li>
-
-        <li><a href="#certifications">Certifications</a></li>
-
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
-    </nav>
-
-  </header>
-
-  <!-- HERO -->
-
-  <section class="hero"
-    id="home">
-
-    <div class="hero-left">
-
-      <p class="hero-tag">
-
-        ✦ FRONTEND DEVELOPER
-        | AI ENTHUSIAST
-
-      </p>
-
-      <h1>
-
-        Crafting Future Ready
-        <br>
-
-        <span>
-          Digital Experiences
-        </span>
-
-      </h1>
-
-      <p class="hero-text">
-
-        I'm PULLAI AKHIL,
-        a B.Tech CSE student passionate
-        about futuristic web development,
-        AI-powered applications,
-        and premium user experiences.
-
-      </p>
-
-      <div class="hero-buttons">
-
-        <a href="./pullai akhil resume.pdf"
-          download
-          class="btn">
-
-          Download Resume
-
-        </a>
-
-        <a href="#projects"
-          class="btn btn2">
-
-          View Projects
-
-        </a>
-
+ 
+  <!-- ── SPLASH / LOADING SCREEN ────────────────────────── -->
+  <div id="splash">
+    <div class="splash-inner">
+      <div class="splash-logo">
+        <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f5d78e"/>
+              <stop offset="100%" stop-color="#b8860b"/>
+            </radialGradient>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+              <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <circle cx="40" cy="40" r="37" fill="none" stroke="url(#goldGlow)" stroke-width="1.5" filter="url(#glow)" opacity="0.9"/>
+          <circle cx="40" cy="40" r="32" fill="rgba(0,0,0,0.6)"/>
+          <polygon points="33,26 33,54 57,40" fill="url(#goldGlow)" filter="url(#glow)"/>
+        </svg>
       </div>
-
-      <!-- SOCIAL -->
-
-      <div class="social-icons">
-
-        <a href="https://github.com/pullaiakhil"
-          target="_blank">
-
-          <i class="fab fa-github"></i>
-
-        </a>
-
-        <a href="https://www.linkedin.com/in/pullai-akhil-40495730b"
-          target="_blank">
-
-          <i class="fab fa-linkedin"></i>
-
-        </a>
-
-        <a href="https://www.instagram.com/mr.akhil_002"
-          target="_blank">
-
-          <i class="fab fa-instagram"></i>
-
-        </a>
-
+      <div class="splash-brand">ARIA</div>
+      <div class="splash-tagline">Minimal Halo</div>
+      <div class="splash-loader">
+        <div class="splash-loader-bar"></div>
       </div>
-
     </div>
-
-    <!-- RIGHT SIDE -->
-
-    <div class="hero-right">
-
-      <div class="glass-circle">
-
-       <div class="inner-circle">
-
-  <img
-    src="./profile.jpg"
-    alt="PULLAI AKHIL"
-    class="profile-img">
-
-</div>
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- ABOUT -->
-
-  <section class="section"
-    id="about">
-
-    <h2 class="title">
-      About Me
-    </h2>
-
-    <div class="about-container">
-
-      <div class="glass-card">
-
-        <h3>Introduction</h3>
-
-        <p>
-
-          I am a 3rd Year
-          B.Tech CSE student at
-          CMR College of Engineering
-          and Technology.
-
-        </p>
-
-      </div>
-
-      <div class="glass-card">
-
-        <h3>Career Objective</h3>
-
-        <p>
-
-          To become a skilled
-          software developer and
-          contribute to impactful
-          real-world projects.
-
-        </p>
-
-      </div>
-
-      <div class="glass-card">
-
-        <h3>Strengths</h3>
-
-        <p>
-
-          Quick Learner,
-          Problem Solver,
-          Team Collaboration,
-          Adaptability,
-          Communication Skills.
-
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- SKILLS -->
-
-  <section class="section"
-    id="skills">
-
-    <h2 class="title">
-      Skills
-    </h2>
-
-    <div class="skills-container">
-
-      <div class="skill-card">HTML</div>
-
-      <div class="skill-card">CSS</div>
-
-      <div class="skill-card">JavaScript</div>
-
-      <div class="skill-card">Python</div>
-
-      <div class="skill-card">Java</div>
-
-      <div class="skill-card">SQL</div>
-
-      <div class="skill-card">C</div>
-
-      <div class="skill-card">C++</div>
-
-      <div class="skill-card">Data Science</div>
-
-    </div>
-
-  </section>
-
-<!-- PROJECTS -->
-
-<section class="section"
-  id="projects">
-
-  <h2 class="title">
-    Projects
-  </h2>
-
-  <div class="project-container">
-
-    <!-- PROJECT 1 -->
-
-    <div class="project-card">
-
-      <h3>
-        Personal Portfolio Website
-      </h3>
-
-      <p>
-
-        • Developed a responsive portfolio website
-        using HTML, CSS, and JavaScript.
-
-        <br><br>
-
-        • Showcased skills, projects,
-        and contact information with
-        clean UI design.
-
-      </p>
-
-    </div>
-
-    <!-- PROJECT 2 -->
-
-    <div class="project-card">
-
-      <h3>
-        NASA Asteroid Classification System
-      </h3>
-
-      <p>
-
-        • Developed a NASA Asteroid Classification
-        system using Python and Machine Learning.
-
-        <br><br>
-
-        • Performed data analysis and prediction
-        using NASA datasets and AI algorithms.
-
-      </p>
-
-    </div>
-
-    <!-- PROJECT 3 -->
-
-    <div class="project-card">
-
-      <h3>
-        Notepad Clone Application
-      </h3>
-
-      <p>
-
-        • Developed GUI-based text editor
-        with file operations and editing features.
-
-        <br><br>
-
-        • Implemented event-driven programming
-        using ActionListeners and Java I/O.
-
-        <br><br>
-
-        • Technologies:
-        Java, Swing, JFileChooser,
-        BufferedReader/Writer
-
-      </p>
-
-    </div>
-
-    <!-- PROJECT 4 -->
-
-    <div class="project-card">
-
-      <h3>
-        Connect 4 Multiplayer Game
-      </h3>
-
-      <p>
-
-        • Built multiplayer game with
-        turn management and win detection.
-
-        <br><br>
-
-        • Implemented horizontal, vertical,
-        and diagonal winning condition logic.
-
-        <br><br>
-
-        • Technologies:
-        Python, Game Logic,
-        Player vs Player functionality
-
-      </p>
-
-    </div>
-
-    <!-- PROJECT 5 -->
-
-    <div class="project-card">
-
-      <h3>
-        Samvaad AI
-      </h3>
-
-      <p>
-
-        • Developed “Samvaad AI”,
-        an AI-powered chatbot for
-        real-time interaction and assistance.
-
-        <br><br>
-
-        • Integrated NLP and
-        voice/text communication features
-        for better user experience.
-
-      </p>
-
-    </div>
-
-    <!-- PROJECT 6 -->
-
-    <div class="project-card">
-
-      <h3>
-        RegulaX AI
-      </h3>
-
-      <p>
-
-        • Designed and developed
-        “RegulaX AI”,
-        an AI-powered compliance
-        management platform.
-
-        <br><br>
-
-        • Built enterprise dashboard
-        for regulation tracking,
-        risk monitoring,
-        and AI task management.
-
-      </p>
-
-    </div>
-
   </div>
-
-</section>
-
- <!-- CERTIFICATIONS -->
-
-<section class="section"
-  id="certifications">
-
-  <h2 class="title">
-    Certifications
-  </h2>
-
-  <div class="cert-container">
-
-    <!-- CERTIFICATE 1 -->
-
-    <a href="./Google-AI-Essentials.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Google AI Essentials
-
-    </a>
-
-    <!-- CERTIFICATE 2 -->
-
-    <a href="./Introduction to DataScience certificate.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Introduction to Data Science
-
-    </a>
-
-    <!-- CERTIFICATE 3 -->
-
-    <a href="./Introduction to IoT certificate.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Introduction to IOT
-
-    </a>
-
-    <!-- CERTIFICATE 4 -->
-
-    <a href="./Python Essentials certificate.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Python Essentials
-
-    </a>
-
-    <!-- CERTIFICATE 5 -->
-
-    <a href="./Introduction to ModernAI certificate.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Introduction to Modern AI
-
-    </a>
-
-    <!-- CERTIFICATE 6 -->
-
-    <a href="./Introduction to Cybersecurity certificate.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Introduction to Cybersecurity
-
-    </a>
-
-    <!-- CERTIFICATE 7 -->
-
-    <a href="./Networking Basics certificate.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Networking Basics
-
-    </a>
-
-    <!-- CERTIFICATE 8 -->
-
-    <a href="./elements of ai.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Elements of AI
-
-    </a>
-
-    <!-- CERTIFICATE 9 -->
-
-    <a href="./Salesforce certificate.pdf"
-      target="_blank"
-      class="cert-card">
-
-      Salesforce Certified
-      Agentforce Specialist
-
-    </a>
-
-  </div>
-
-</section>
-
-    <!-- CONTACT -->
-
-<section class="section"
-  id="contact">
-
-  <h2 class="title">
-    Contact Me
-  </h2>
-
-  <form
-    action="https://api.web3forms.com/submit"
-    method="POST"
-    class="contact-form">
-
-    <!-- ACCESS KEY -->
-
-    <input
-      type="hidden"
-      name="access_key"
-      value="2cd7dd39-3068-463a-aa84-70c351b39923">
-
-    <input
-      type="text"
-      name="name"
-      placeholder="Your Name"
-      required>
-
-    <input
-      type="email"
-      name="email"
-      placeholder="Your Email"
-      required>
-
-    <textarea
-      name="message"
-      rows="6"
-      placeholder="Your Message"
-      required></textarea>
-
-    <input
-      type="hidden"
-      name="redirect"
-      value="https://pullaiakhil.github.io/portfolio-/">
-
-    <button
-      type="submit"
-      class="btn">
-
-      Send Message
-
-    </button>
-
-  </form>
-
-</section>
-
-  <!-- FOOTER -->
-
-  <footer>
-
-    <p>
-
-      © 2026 PULLAI AKHIL
-      | All Rights Reserved
-
-    </p>
-
-  </footer>
-
-  <!-- JS -->
-
+ 
+  <!-- ── TOAST NOTIFICATIONS ────────────────────────────── -->
+  <div id="toast-container"></div>
+ 
+  <!-- ── CURSOR GLOW ─────────────────────────────────────── -->
+  <div id="cursor-glow"></div>
+ 
+  <!-- ── MAIN APP ───────────────────────────────────────── -->
+  <div id="app" class="hidden">
+ 
+    <!-- AMBIENT BACKGROUND -->
+    <div id="ambient-bg">
+      <div class="ambient-layer" id="amb1"></div>
+      <div class="ambient-layer" id="amb2"></div>
+      <div class="ambient-layer" id="amb3"></div>
+    </div>
+ 
+    <!-- ── LEFT SIDEBAR ──────────────────────────────────── -->
+    <aside id="sidebar">
+      <div class="sidebar-logo">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+          <defs>
+            <radialGradient id="sg" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#f5d78e"/>
+              <stop offset="100%" stop-color="#b8860b"/>
+            </radialGradient>
+            <filter id="sg2"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <circle cx="24" cy="24" r="22" fill="none" stroke="url(#sg)" stroke-width="1.5" filter="url(#sg2)"/>
+          <circle cx="24" cy="24" r="18" fill="rgba(0,0,0,0.7)"/>
+          <polygon points="20,15 20,33 34,24" fill="url(#sg)"/>
+        </svg>
+        <span class="sidebar-brand">ARIA</span>
+      </div>
+ 
+      <div class="sidebar-search">
+        <span class="icon">⌕</span>
+        <input type="text" id="search-input" placeholder="Search songs, artists…" autocomplete="off" />
+      </div>
+ 
+      <nav class="sidebar-nav">
+        <a href="#" class="nav-item active" data-section="home">
+          <span class="nav-icon">⌂</span><span>Home</span>
+        </a>
+        <a href="#" class="nav-item" data-section="browse">
+          <span class="nav-icon">◈</span><span>Browse</span>
+        </a>
+        <a href="#" class="nav-item" data-section="radio">
+          <span class="nav-icon">◉</span><span>Radio</span>
+        </a>
+        <a href="#" class="nav-item" data-section="library">
+          <span class="nav-icon">▦</span><span>Library</span>
+        </a>
+        <a href="#" class="nav-item" data-section="favorites">
+          <span class="nav-icon">♡</span><span>Favorites</span>
+        </a>
+        <a href="#" class="nav-item" data-section="recent">
+          <span class="nav-icon">◷</span><span>Recently Played</span>
+        </a>
+        <a href="#" class="nav-item" data-section="downloads">
+          <span class="nav-icon">↓</span><span>Downloads</span>
+        </a>
+        <a href="#" class="nav-item" data-section="settings">
+          <span class="nav-icon">⚙</span><span>Settings</span>
+        </a>
+      </nav>
+ 
+      <div class="sidebar-section-title">MY PLAYLISTS</div>
+      <div class="sidebar-playlists" id="sidebar-playlists">
+        <!-- Injected by JS -->
+      </div>
+    </aside>
+ 
+    <!-- ── CENTER PLAYER ─────────────────────────────────── -->
+    <main id="center">
+ 
+      <!-- SECTION: HOME -->
+      <section class="app-section active" id="section-home">
+        <div class="section-header">
+          <h1 id="section-greeting">Good Evening</h1>
+          <p class="section-sub">Curated for you · <span id="date-display"></span></p>
+        </div>
+ 
+        <!-- FEATURED ALBUM ART + PLAYER -->
+        <div class="player-stage">
+          <div class="album-scene" id="album-scene">
+            <!-- 3D vinyl record -->
+            <div class="vinyl-wrap" id="vinyl-wrap">
+              <div class="vinyl" id="vinyl">
+                <div class="vinyl-label" id="vinyl-label">
+                  <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+                    <defs>
+                      <radialGradient id="vg" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="#f5d78e"/>
+                        <stop offset="100%" stop-color="#b8860b"/>
+                      </radialGradient>
+                    </defs>
+                    <circle cx="40" cy="40" r="38" fill="none" stroke="url(#vg)" stroke-width="1.5"/>
+                    <polygon points="33,26 33,54 57,40" fill="url(#vg)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!-- Album art card -->
+            <div class="album-card" id="album-card">
+              <div class="album-art-wrap" id="album-art-wrap">
+                <div class="album-art" id="album-art">
+                  <div class="album-art-emoji" id="album-art-emoji">🎵</div>
+                </div>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- Song info -->
+          <div class="song-info-block" id="song-info-block">
+            <div class="song-title" id="song-title">Select a Song</div>
+            <div class="song-artist" id="song-artist">ARIA Music</div>
+            <div class="song-album" id="song-album">—</div>
+            <div class="song-actions">
+              <button class="action-btn" id="btn-fav" title="Favorite" onclick="toggleFavorite()">♡</button>
+              <button class="action-btn" title="Add to playlist">+</button>
+              <button class="action-btn" title="Share">↗</button>
+            </div>
+          </div>
+ 
+          <!-- Audio Visualizer -->
+          <canvas id="visualizer" width="500" height="60"></canvas>
+        </div>
+ 
+        <!-- Featured playlists grid -->
+        <div class="section-header" style="margin-top:2.5rem">
+          <h2>Featured</h2>
+        </div>
+        <div class="featured-grid" id="featured-grid">
+          <!-- Injected by JS -->
+        </div>
+ 
+        <!-- Recently played row -->
+        <div class="section-header" style="margin-top:2rem">
+          <h2>Recently Played</h2>
+          <a href="#" class="see-all">See All</a>
+        </div>
+        <div class="songs-row" id="recent-row">
+          <!-- Injected by JS -->
+        </div>
+      </section>
+ 
+      <!-- OTHER SECTIONS (Browse, Radio, etc.) -->
+      <section class="app-section" id="section-browse">
+        <div class="section-header"><h1>Browse</h1><p class="section-sub">Discover new music</p></div>
+        <div class="featured-grid" id="browse-grid"></div>
+      </section>
+      <section class="app-section" id="section-radio">
+        <div class="section-header"><h1>Radio</h1><p class="section-sub">Live & curated stations</p></div>
+        <div class="featured-grid" id="radio-grid"></div>
+      </section>
+      <section class="app-section" id="section-library">
+        <div class="section-header"><h1>Library</h1><p class="section-sub">Your full collection</p></div>
+        <div class="songs-list" id="library-list"></div>
+      </section>
+      <section class="app-section" id="section-favorites">
+        <div class="section-header"><h1>Favorites</h1><p class="section-sub">Songs you love</p></div>
+        <div class="songs-list" id="favorites-list"></div>
+      </section>
+      <section class="app-section" id="section-recent">
+        <div class="section-header"><h1>Recently Played</h1><p class="section-sub">Pick up where you left off</p></div>
+        <div class="songs-list" id="recent-list"></div>
+      </section>
+      <section class="app-section" id="section-downloads">
+        <div class="section-header"><h1>Downloads</h1><p class="section-sub">Available offline</p></div>
+        <div class="empty-state">
+          <div class="empty-icon">↓</div>
+          <p>No downloads yet. Songs you download will appear here.</p>
+        </div>
+      </section>
+      <section class="app-section" id="section-settings">
+        <div class="section-header"><h1>Settings</h1><p class="section-sub">Customize your experience</p></div>
+        <div class="settings-panel">
+          <div class="setting-row">
+            <span>Theme</span>
+            <button class="toggle-btn" id="theme-toggle" onclick="toggleTheme()">Dark ●</button>
+          </div>
+          <div class="setting-row">
+            <span>Audio Visualizer</span>
+            <button class="toggle-btn active" id="viz-toggle" onclick="toggleViz()">On ●</button>
+          </div>
+          <div class="setting-row">
+            <span>Crossfade</span>
+            <button class="toggle-btn active">On ●</button>
+          </div>
+          <div class="setting-row">
+            <span>High Quality Streaming</span>
+            <button class="toggle-btn active">Lossless ●</button>
+          </div>
+        </div>
+      </section>
+ 
+      <!-- PLAYLIST VIEW SECTION -->
+      <section class="app-section" id="section-playlist">
+        <div class="playlist-hero" id="playlist-hero">
+          <div class="playlist-hero-art" id="playlist-hero-art"></div>
+          <div class="playlist-hero-info">
+            <div class="playlist-hero-label">Playlist</div>
+            <div class="playlist-hero-name" id="playlist-hero-name">Playlist</div>
+            <div class="playlist-hero-meta" id="playlist-hero-meta"></div>
+            <button class="play-all-btn" onclick="playAll()">▶ Play All</button>
+          </div>
+        </div>
+        <div class="songs-list" id="playlist-songs-list"></div>
+      </section>
+ 
+    </main>
+ 
+    <!-- ── RIGHT PANEL ───────────────────────────────────── -->
+    <aside id="right-panel">
+      <!-- Tabs -->
+      <div class="rpanel-tabs">
+        <button class="rtab active" data-tab="lyrics" onclick="switchRTab(this,'lyrics')">Lyrics</button>
+        <button class="rtab" data-tab="queue" onclick="switchRTab(this,'queue')">Up Next</button>
+        <button class="rtab" data-tab="related" onclick="switchRTab(this,'related')">Related</button>
+      </div>
+ 
+      <!-- LYRICS TAB -->
+      <div class="rtab-content active" id="rtab-lyrics">
+        <div class="lyrics-container" id="lyrics-container">
+          <div class="lyrics-empty" id="lyrics-empty">
+            <div class="lyrics-empty-icon">♪</div>
+            <p>Play a song to see lyrics</p>
+          </div>
+          <div id="lyrics-lines"></div>
+        </div>
+      </div>
+ 
+      <!-- QUEUE TAB -->
+      <div class="rtab-content" id="rtab-queue">
+        <div class="queue-section">
+          <div class="queue-label">Now Playing</div>
+          <div class="queue-now" id="queue-now"></div>
+          <div class="queue-label" style="margin-top:1.2rem">Next Up</div>
+          <div id="queue-list"></div>
+        </div>
+      </div>
+ 
+      <!-- RELATED TAB -->
+      <div class="rtab-content" id="rtab-related">
+        <div id="related-list"></div>
+      </div>
+    </aside>
+ 
+    <!-- ── BOTTOM PLAYER BAR ─────────────────────────────── -->
+    <div id="player-bar">
+      <!-- LEFT: Song info -->
+      <div class="pbar-left">
+        <div class="pbar-art" id="pbar-art">
+          <span id="pbar-art-emoji">♪</span>
+        </div>
+        <div class="pbar-info">
+          <div class="pbar-title" id="pbar-title">—</div>
+          <div class="pbar-artist" id="pbar-artist">ARIA</div>
+        </div>
+        <button class="pbar-fav" id="pbar-fav" onclick="toggleFavorite()">♡</button>
+      </div>
+ 
+      <!-- CENTER: Controls -->
+      <div class="pbar-center">
+        <div class="pbar-controls">
+          <button class="ctrl-btn" id="btn-shuffle" title="Shuffle" onclick="toggleShuffle()">⇄</button>
+          <button class="ctrl-btn" id="btn-prev" title="Previous" onclick="prevSong()">⏮</button>
+          <button class="ctrl-btn seek-btn" title="Back 10s" onclick="seekBackward()">
+            <span>↺</span><small>10</small>
+          </button>
+          <button class="ctrl-btn play-btn" id="btn-play" onclick="togglePlay()">▶</button>
+          <button class="ctrl-btn seek-btn" title="Forward 10s" onclick="seekForward()">
+            <span>↻</span><small>10</small>
+          </button>
+          <button class="ctrl-btn" id="btn-next" title="Next" onclick="nextSong()">⏭</button>
+          <button class="ctrl-btn" id="btn-repeat" title="Repeat" onclick="toggleRepeat()">↻</button>
+        </div>
+        <div class="pbar-progress">
+          <span class="pbar-time" id="pbar-current">0:00</span>
+          <div class="progress-track" id="progress-track" onclick="seekTo(event)">
+            <div class="progress-fill" id="progress-fill"></div>
+            <div class="progress-thumb" id="progress-thumb"></div>
+          </div>
+          <span class="pbar-time" id="pbar-duration">0:00</span>
+        </div>
+      </div>
+ 
+      <!-- RIGHT: Volume & extras -->
+      <div class="pbar-right">
+        <button class="ctrl-btn" id="btn-queue" title="Queue" onclick="switchRTab(document.querySelector('[data-tab=queue]'),'queue')">≡</button>
+        <button class="ctrl-btn" id="btn-lyrics-toggle" title="Lyrics" onclick="switchRTab(document.querySelector('[data-tab=lyrics]'),'lyrics')">♪</button>
+        <button class="ctrl-btn" title="AirPlay">⊿</button>
+        <div class="volume-wrap">
+          <span class="vol-icon" onclick="toggleMute()">🔊</span>
+          <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.7" oninput="setVolume(this.value)" />
+        </div>
+        <button class="ctrl-btn" title="Fullscreen" onclick="toggleFullscreen()">⛶</button>
+      </div>
+    </div>
+ 
+    <!-- ── MINI PLAYER ───────────────────────────────────── -->
+    <div id="mini-player" class="hidden">
+      <div class="mini-art" id="mini-art">♪</div>
+      <div class="mini-info">
+        <div class="mini-title" id="mini-title">—</div>
+        <div class="mini-artist" id="mini-artist">ARIA</div>
+      </div>
+      <div class="mini-controls">
+        <button onclick="togglePlay()">▶</button>
+        <button onclick="nextSong()">⏭</button>
+      </div>
+      <button class="mini-close" onclick="toggleMiniPlayer()">✕</button>
+    </div>
+ 
+  </div><!-- /#app -->
+ 
+  <!-- Hidden audio element -->
+  <audio id="audio-player" crossorigin="anonymous"></audio>
+ 
   <script src="script.js"></script>
-
 </body>
-
 </html>
