@@ -43,7 +43,7 @@ const SONGS = [
   { id:13, title: 'Dooram Karigina',         artist: 'Sid Sriram',       album: 'Sid Sriram',             cover:'public/dooram.webp', duration: 241, playlist: 'sid-sriram', src:'public/Dooram Karigina.mp3',     lyrics: LYRICS_DOORAM_KARIGINA() },
   { id:14, title: 'Kannaane Kannaane', artist: 'Sid Sriram',       album: 'Soorarai Pottru',        cover:'public/kannaana.jpg', duration: 270, playlist: 'sid-sriram', src:'public/Kannaana Kanney.mp3',     lyrics: LYRICS_KANNAANA() },
   // Trending / Chill / Workout
-  { id:15, title: 'Calm Down',         artist: 'Rema & Selena G',  album: 'Rave & Roses',           cover:'public/calm down.jpeg', duration: 240, playlist: 'trending', src:'public/calm down.mp3',       lyrics: LYRICS_CALM_DOWN() },
+  { id:15, title: 'Calm Down',         artist: 'Rema & Selena G',  album: 'Rave & Roses',       src:'public/calm down.mp3',    cover:'public/calm down.jpeg', duration: 240, playlist: 'trending',      lyrics: LYRICS_CALM_DOWN() },
   { id:16, title: 'Levitating',        artist: 'Dua Lipa',         album: 'Future Nostalgia',       cover:'public/levitating1.jpeg', duration: 203, playlist: 'chill',  src:'public/Levitating.mp3',         lyrics: LYRICS_LEVITATING() },
   { id:17, title: 'Blinding Lights',   artist: 'The Weeknd',       album: 'After Hours',           cover:'public/blind.jpg', duration: 200, playlist: 'workout',src:'public/Blinding Lights.mp3',         lyrics: LYRICS_BLINDING_LIGHTS() },
   { id:18, title: 'Peaches',           artist: 'Justin Bieber',    album: 'Justice',                cover:'public/peaches.jpg', duration: 198, playlist: 'chill',  src:'public/peaches.mp3',         lyrics:LYRICS_PEACHES() },
