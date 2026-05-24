@@ -41,7 +41,7 @@ const SONGS = [
   { id:12, title: 'Ae Dil Hai Mushkil',artist: 'Arijit Singh',     album: 'ADHM',                  cover:'public/channa.webp', duration: 268, playlist: 'arijit', src:'public/Ae Dil Hai Mushkil.mp3',         lyrics: LYRICS_AE_DIL_HAI_MUSHKIL() },
   // Sid Sriram
   { id:13, title: 'Dooram Karigina',         artist: 'Sid Sriram',       album: 'Sid Sriram',             cover:'public/dooram.webp', duration: 241, playlist: 'sid-sriram', src:'public/Dooram Karigina.mp3',     lyrics: LYRICS_DOORAM_KARIGINA() },
-  { id:14, title: 'Kannaane Kannaane', artist: 'Sid Sriram',       album: 'Soorarai Pottru',        cover:'public/Kannaana.jpg', duration: 270, playlist: 'sid-sriram', src:'public/Kannaana Kanney.mp3',     lyrics: LYRICS_KANNAANA() },
+  { id:14, title: 'Kannaane Kannaane', artist: 'Sid Sriram',       album: 'Soorarai Pottru',        cover:'public/kannaana.jpg', duration: 270, playlist: 'sid-sriram', src:'public/Kannaana Kanney.mp3',     lyrics: LYRICS_KANNAANA() },
   // Trending / Chill / Workout
   { id:15, title: 'Calm Down',         artist: 'Rema & Selena G',  album: 'Rave & Roses',           cover:'public/calm down.jpeg', duration: 240, playlist: 'trending', src:'public/clam down.mp3',       lyrics: LYRICS_CALM_DOWN() },
   { id:16, title: 'Levitating',        artist: 'Dua Lipa',         album: 'Future Nostalgia',       cover:'public/levitating1.jpeg', duration: 203, playlist: 'chill',  src:'public/Levitating.mp3',         lyrics: LYRICS_LEVITATING() },
