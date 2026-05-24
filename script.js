@@ -24,7 +24,7 @@ const PLAYLISTS = [
  
 const SONGS = [
   // Telugu Essentials
-  { id:1,  title: 'Samajavaragamana',  artist: 'Sid Sriram',       album: 'Ala Vaikunthapurramuloo',   cover:'public/ala.jpg', duration: 228, playlist: 'telugu-essential',   src:'public/samajavaragamana.mp3', lyrics: LYRICS_SAMAJAVARA() },
+  { id:1,  title: 'Samajavaragamana',  artist: 'Sid Sriram',       album: 'Ala Vaikunthapurramuloo',   cover:'public/ala.jpg', duration: 228, playlist: 'telugu-essential',   src:'public/Samajavaragamana.mp3', lyrics: LYRICS_SAMAJAVARA() },
   { id:2,  title: 'Butta Bomma',       artist: 'Armaan Malik',     album: 'Ala Vaikunthapurramuloo', cover:'public/ala.jpg', duration: 191, playlist: 'telugu-essential',   src:'public/Buttabomma.mp3', lyrics: LYRICS_BUTTABOMMA() },
   { id:3,  title: 'Ramuloo Ramulaa',   artist: 'Mangli & Anurag',  album: 'Ala Vaikunthapurramuloo', cover:'public/ala.jpg', duration: 243, playlist: 'telugu-essential',  src:'public/Ramuloo Ramula.mp3', lyrics: LYRICS_RAMULOO() },
   { id:4,  title: 'Naatu Naatu',       artist: 'Rahul Sipligunj',  album: 'RRR',                   cover:'public/rrr.webp', duration: 201, playlist: 'telugu-essential',  src:'public/Naatu-Naatu.mp3', lyrics: LYRICS_NAATU() },
